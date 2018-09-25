@@ -1,7 +1,10 @@
 <template>
   <div class="hello">
+    <!-- interpolation -->
     {{ name }}
+    <!-- javascript expression -->
     {{ btnState? 'The button is disabled.' : 'The button is enabled.'}}
+    <!-- vue directive -->
     <button v-on:click="changeName" v-bind:disabled="btnState">Change Name </button>
   </div>
 </template>
