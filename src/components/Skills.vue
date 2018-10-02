@@ -9,7 +9,7 @@
 
     <div v-bind:class="alertObject" ></div>
     <!-- style binding -->
-    <div v-bind:style="{background: bgColor, width: bgWidth, height: bgHeight }"></div>
+    <div v-bind:style="{background: bgColor, width: bgWidth, height: bgHeight }"><p>This is style binding.</p></div>
     </div>
   </div>
 </template>
@@ -26,7 +26,7 @@ export default {
       alertObject: {
         alert: true
       },
-      bgColor: 'green',
+      bgColor: 'grey',
       bgWidth: '100%',
       bgHeight: '30px'
     }
