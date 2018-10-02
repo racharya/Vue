@@ -8,6 +8,8 @@
       <p v-else>You have less than or equal to 1 skill</p>
 
     <div v-bind:class="alertObject" ></div>
+    <!-- style binding -->
+    <div v-bind:style="{background: bgColor, width: bgWidth, height: bgHeight }"></div>
     </div>
   </div>
 </template>
@@ -23,7 +25,10 @@ export default {
       ],
       alertObject: {
         alert: true
-      }
+      },
+      bgColor: 'green',
+      bgWidth: '100%',
+      bgHeight: '30px'
     }
   }
 }
